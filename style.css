@@ -1,0 +1,106 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(400deg, #2700F2, #8C00F2, #FF00E5); /*here*/
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+/*     background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1); */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.2);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.25); /*here 30*/
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.5); /*here 0.75*/
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    border-radius: 10px;
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 15px; /*here 35*/
+    text-align: right;
+    width: 326px;
+}
+
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 22px; /*here 24*/
+    height: 65px; 
+}
+
+.calc-button:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 13px; /*here 16*/
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #fff;
+    background: #f20095; /*here #d72880*/
+}
+
+.calc-button:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+
+.calc-button:hover{
+    background-color: inherit;
+}
+
+.calc-button:active{
+    background-color: #5b4ee8; /*here #ffef78*/
+}
+
+.double{
+    flex-basis: 46%;
+}
+
+.triple{
+    flex-basis: 74%;
+}
